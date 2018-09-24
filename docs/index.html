@@ -1,5 +1,4 @@
 <html>
-
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <title>shopping24 Tech Radar</title>
@@ -34,8 +33,13 @@
 <body>
 
 <svg id="radar"></svg>
-
 <script>
+    // Constants for better readability
+    let QUADRANT_INFRASTRUCTURE = 2;
+    let RING_ADOPT = 0;
+    let RING_TRIAL = 1;
+    let RING_ASSESS = 2;
+    let RING_HOLD = 3;
 radar_visualization({
   svg_id: "radar",
   width: 1450,
@@ -63,128 +67,128 @@ radar_visualization({
   //ENTRIES
   entries: [
       {
-        quadrant: 2,
-        ring: 0,
         label: "Varnish Cache",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ADOPT,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 0,
         label: "PostgreSQL",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ADOPT,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 3,
         label: "AWS",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_HOLD,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 3,
         label: "DC/OS",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_HOLD,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 3,
         label: "OpenNebula",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_HOLD,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 3,
         label: "VMWare",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_HOLD,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 2,
         label: "Portus",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ASSESS,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 2,
         label: "Vault",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ASSESS,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 2,
         label: "Consul",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ASSESS,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 1,
         label: "Prometheus",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_TRIAL,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 0,
         label: "Ansible",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ADOPT,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 1,
         label: "Ceph",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_TRIAL,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 1,
         label: "Docker",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_TRIAL,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 0,
         label: "Jenkins CI",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ADOPT,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 1,
         label: "Kubernetes",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_TRIAL,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 0,
         label: "HAProxy",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ADOPT,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 0,
         label: "KVM",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ADOPT,
         active: false,
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 0,
         label: "nginx",
+        quadrant: QUADRANT_INFRASTRUCTURE,
+        ring: RING_ADOPT,
         active: false,
         moved: 0
       },
